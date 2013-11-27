@@ -254,10 +254,10 @@
 				this.jO
 					.addClass('flippy_active')
 					.parent()
-					.css({
+					/*.css({
 					    // ! perspective property setting is still buggy, so _Depth is inactive until a better solution is find
 						"perspective": this._nW+"px" // old version : Math.floor(this._Depth * this._nW) +"px"
-					});
+					});*/
 				this.jO.data("_oFlippy_",this);
 				this._Int = setInterval($.proxy(this.drawFlippyCSS, this), this._Refresh_rate);
 			}
